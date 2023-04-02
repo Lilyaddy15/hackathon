@@ -26,6 +26,7 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import NavBar from "@/components/navbar";
+import AssignmentBreakdown from "@/components/breakdowns";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,12 +43,18 @@ export default function AssignmentPage() {
       </Head>
       <main>
         <NavBar page="assignments" />
-        <Card margin={10} bg="brand.100">
+        <Card margin={10} bg="#ECF2FF">
           <Accordion defaultIndex={[0]} allowMultiple>
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box as="span" flex="1" textAlign="left">
+                  <Box
+                    as="span"
+                    flex="1"
+                    textAlign="left"
+                    fontSize={"2xl"}
+                    fontWeight={"bold"}
+                  >
                     CAL Essay Due 4/13
                   </Box>
                   <AccordionIcon />
@@ -86,7 +93,13 @@ export default function AssignmentPage() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box as="span" flex="1" textAlign="left">
+                  <Box
+                    as="span"
+                    flex="1"
+                    textAlign="left"
+                    fontSize={"2xl"}
+                    fontWeight={"bold"}
+                  >
                     Math Homework
                   </Box>
                   <AccordionIcon />
@@ -120,7 +133,13 @@ export default function AssignmentPage() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box as="span" flex="1" textAlign="left">
+                  <Box
+                    as="span"
+                    flex="1"
+                    textAlign="left"
+                    fontSize={"2xl"}
+                    fontWeight={"bold"}
+                  >
                     Study for Physics Midterm!
                   </Box>
                   <AccordionIcon />

@@ -23,16 +23,6 @@ export default function NavBar(props) {
 
   return (
     <Flex margin={5} justifyContent={"space-between"}>
-      {/* <Tabs variant={"soft-rounded"}>
-        <TabList>
-          <Tab onClick={dashboardClick}>Dashboard</Tab>
-          <Tab onClick={assignmentClick}>Assignments</Tab>
-        </TabList>
-      </Tabs>
-      <Spacer />
-      <Tabs variant={"unstyled"}>
-        <Tab>Login</Tab>
-      </Tabs> */}
       <Flex margin={5} alignItems={"center"}>
         <Heading>Split</Heading>
       </Flex>

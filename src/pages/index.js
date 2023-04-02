@@ -30,6 +30,7 @@ import {
 
 import { useRouter } from "next/router";
 import NavBar from "@/components/navbar";
+import AssignmentBreakdown from "@/components/breakdowns";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -50,7 +51,7 @@ function ToDoCards(props) {
 
 function AchievementBadges(props) {
   return (
-    <Card margin={5} textAlign={"center"}>
+    <Card margin={5} textAlign={"center"} bg="#E3DFFD">
       <CardHeader>
         <Heading>{props.achievement}</Heading>
         <Heading size={"md"}>{props.description}</Heading>
@@ -76,7 +77,7 @@ export default function Home() {
       </Head>
       <main>
         <NavBar page="dash" />
-        <Box borderWidth={"2px"} margin={5} borderRadius={"lg"}>
+        <Box borderWidth={"2px"} margin={5} borderRadius={"lg"} bg="#ECF2FF">
           <Heading margin={"5"} textAlign={"center"} size={"2xl"}>
             To Do Today
           </Heading>
